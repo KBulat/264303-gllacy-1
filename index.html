@@ -231,10 +231,6 @@
         <div class="map-container">
           <iframe src="https://yandex.ru/map-widget/v1/-/CBU-yDvW2A" width="1200" height="430" frameborder="0"></iframe>
         </div>
-        <!-- <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412403!2d30.320894616187918!3d59.938796869047835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1506841822750"
-                width="1200" height="430" allowfullscreen>
-        </iframe> -->
           <div class="contacts-wrapper">
 
             <div class="contacts">
@@ -306,17 +302,20 @@
         </footer>
 
         <section class="modal modal-feedback">
-          <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
           <form class="feedback-form" action="#" method="post">
-            <p>
-              <input class="feedback-field" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
-            </p>
-            <p>
-              <input class="feedback-field" type="text" name="feedback-mail" placeholder="Ваша почта для ответа?" required>
-            </p>
-            <p>
-              <textarea class="feedback-textarea" name="feedback-message" placeholder="Напишите что-нибудь..." required></textarea>
-            </p>
+          <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
+            <div class="form-container">
+              <input id="feedback-name" class="field" type="text" name="feedback-name" required>
+              <label for="feedback-name">Как вас зовут?</label>
+            </div>
+            <div class="form-container">
+              <input id="feedback-mail" class="field" type="text" name="feedback-mail" required>
+              <label for="feedback-mail">Ваша почта для ответа?</label>
+            </div>
+            <div class="form-container">
+              <textarea id="feedback-message" class="field" name="feedback-message" required></textarea>
+              <label for="feedback-message">Напишите что-нибудь...</label>
+            </div>
             <button class="btn btn-feedback" type="submit">Отправить</button>
             <button class="btn-close" type="button">Закрыть</button>
           </form>
