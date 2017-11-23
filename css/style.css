@@ -1398,10 +1398,6 @@ textarea:active {
   margin-right: 45px;
 }
 
-/*.filters-form .filter-item:last-of-type {
-  margin-top: 16px;
-}*/
-
 .filters-form .filter-checkbox {
   margin-top: 16px;
 }
@@ -1409,7 +1405,6 @@ textarea:active {
 .filter-item:last-of-type legend {
   margin-bottom: 5px;
   margin-left: 16px;
-  /*margin-top: 16px;*/
 }
 
 .filter-buttons-topping {
