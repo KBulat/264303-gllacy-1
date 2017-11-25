@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
   </head>
   <body>
     <input class="slider-input visually-hidden" type="radio" id="btn-1" name="slider-slide" checked>
@@ -43,10 +43,10 @@
                 Поиск
               </a>
               <div class="popup-search">
-                <form class="search-form" action="#" method="get">
+                <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                   <div class="form-container">
                     <input id="search-field" class="field" type="search" name="search-field" required>
-                    <label  class=""for="search-field">Что ищем?</label>
+                    <label for="search-field">Что ищем?</label>
                   </div>
                 </form>
               </div>
@@ -59,7 +59,7 @@
                 Вход
               </a>
               <div class="popup-login">
-                <form class="popup-login-form" action="#" method="get">
+                <form class="popup-login-form" action="https://echo.htmlacademy.ru" method="get">
                   <div class="form-container">
                     <input id="email" class="field" type="email" name="email" required>
                     <label for="email">Электронная почта</label>
@@ -213,7 +213,7 @@
             <section class="post">
               <h2 class="visually-hidden">Рассылка новостей</h2>
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="post-form" action="#" method="get">
+              <form class="post-form" action="https://echo.htmlacademy.ru" method="get">
                 <div class="form-container">
                   <input id="email-subscribe" class="field" type="email" name="email" required>
                   <label for="email-subscribe">Электронная почта</label>
@@ -226,30 +226,23 @@
         </main>
       </div>
 
-      <section class="map">
+      <section id="map" class="map-block">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="map-container">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBU-yDvW2A" width="1200" height="430" frameborder="0"></iframe>
+        <div class="contacts">
+          <p class="contacts-adress-title">
+            Адрес главного офиса
+            и офлайн магазина:
+          </p>
+          <b class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+
+          <p class="contacts-phone-title">
+            Для заказов по телефону:
+          </p>
+
+          <b class="contacts-phone">8 812 450-25-25</b>
+          <p class="contacts-worktime">(с 10 до 20 ежедневно)</p>
+          <a class="btn btn-contacts" href="#">Форма обратной связи</a>
         </div>
-          <div class="contacts-wrapper">
-
-            <div class="contacts">
-              <p class="contacts-adress-title">
-                Адрес главного офиса
-                и офлайн магазина:
-              </p>
-              <b class="contacts-adress">ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-
-              <p class="contacts-phone-title">
-                Для заказов по телефону:
-              </p>
-
-              <b class="contacts-phone">8 812 450-25-25</b>
-              <p class="contacts-worktime">(с 10 до 20 ежедневно)</p>
-              <a class="btn btn-contacts" href="#">Форма обратной связи</a>
-            </div>
-
-          </div>
       </section>
 
       <div class="content-wrapper">
@@ -302,7 +295,7 @@
         </footer>
 
         <section class="modal modal-feedback">
-          <form class="feedback-form" action="#" method="post">
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <h2 class="feedback-title">Мы обязательно вам ответим!</h2>
             <div class="form-container">
               <input id="feedback-name" class="field" type="text" name="feedback-name" required>
@@ -322,6 +315,7 @@
         </section>
       </div>
     </div>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script type="text/javascript" src="js/script-min.js"></script>
   </body>
 </html>
