@@ -269,7 +269,6 @@ textarea:active {
   display: block;
   width: 33px;
   height: 33px;
-  font-size: 0;
   border-radius: 50%;
 }
 
@@ -466,7 +465,6 @@ textarea:active {
   padding-left: 19px;
   padding-right: 19px;
   border-radius: 16px;
-
 }
 
 .offer-item h3 {
@@ -580,7 +578,6 @@ textarea:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
 }
-
 
 .product-hit:before {
   content: "";
@@ -737,7 +734,6 @@ textarea:active {
 .post {
   width: 48.9%;
   border-radius: 15px;
-
 }
 
 .blog-news {
@@ -987,6 +983,7 @@ textarea:active {
 }
 
 .footer-menu-list a:hover,
+.footer-menu-list a:focus,
 .footer-menu-list a:active {
   color: #ffbc9e;
   border-bottom: 1px solid rgba(255, 188, 158, 0.2);
@@ -1302,7 +1299,6 @@ textarea:active {
   color: #ffbc9e;
   -webkit-text-decoration-color: rgba(255, 188, 158, 0.2);
           text-decoration-color: rgba(255, 188, 158, 0.2);
-
 }
 
 .breadcrumbs-item:not(:last-of-type)::after {
@@ -1498,13 +1494,19 @@ textarea:active {
 }
 
 .filter-buttons .filter-label:hover,
-.filter-buttons .filter-label:checked {
+.filter-buttons .filter-label:checked,
+.filter-buttons .filter-label:focus {
   opacity: 1;
   cursor: pointer;
 }
 
-.filter-input:checked + .filter-label {
+.filter-input:checked + .filter-label,
+.filter-input:focus + .filter-label {
   opacity: 1;
+}
+
+.filter-input:focus + label {
+  outline: 1px solid #5b9ddf;
 }
 
 .filter-buttons-fat .filter-label::before {
@@ -1537,7 +1539,6 @@ textarea:active {
   background-size: 20px;
   width: 20px;
   height: 20px;
-
   left: -32px;
   top: 0px;
 }
@@ -1547,7 +1548,6 @@ textarea:active {
   background-repeat: no-repeat;
   background-size: 23px 20px;
   width: 23px;
-
   left: -32px;
   top: 0px;
 }
@@ -1612,19 +1612,16 @@ textarea:active {
   color: #ffffff;
   width: 26px;
   height: 26px;
-
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
   text-align: center;
-
   border-radius: 50%;
   text-decoration: none;
 }
 
 .pagination-item-disabled {
   opacity: 0.2;
-
   pointer-events: none;
 }
 
@@ -1635,7 +1632,6 @@ textarea:active {
 .pagination-item a:not([href]),
 .pagination-item a[href]:focus {
   color: #323232;
-
   background-color: #ffffff;
 }
 
@@ -1862,9 +1858,7 @@ textarea:active {
   right: 16px;
   width: 18px;
   height: 17px;
-
   font-size: 0;
-
   background-image: url("../img/cross-big.svg");
   background-repeat: no-repeat;
   border: 0;
